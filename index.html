@@ -1,9 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head>    
     <title>This is my page</title>
+    <style>
+      /*  styles go here  */
+    </style>
   </head>
-  <body>
-    <!--  Put some structural elements here  -->
+  <body>      
+    <div>This here is some kind of typing.</div>
+    <div>This here is some other kind of typing.</div>
+    <div>
+      <video id="video-player" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" controls>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odit nam neque nisi ea fuga consequatur minima nobis. Ab recusandae inventore nostrum doloribus consequuntur in maxime placeat dicta numquam ducimus.
+      </video>
+    </div>
+    <div>
+      <form action="#">
+        <div>
+          <label for="name">Text Input:</label>
+          <input type="text" name="name" id="name" placeholder="John Smith" />
+        </div>
+
+        <fieldset>
+          <legend>Radio Button Choice</legend>
+
+          <label for="radio-choice-1">Choice 1</label>
+          <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+
+          <label for="radio-choice-2">Choice 2</label>
+          <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+        </fieldset>
+
+        <div>
+          <label for="select-choice">Select Dropdown Choice:</label>
+          <select name="select-choice" id="select-choice">
+            <option value="Choice 1">Choice 1</option>
+            <option value="Choice 2">Choice 2</option>
+            <option value="Choice 3">Choice 3</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="textarea">Textarea:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        </div>
+
+        <div>
+          <label for="checkbox">Checkbox:</label>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form> 
+    </div>
+    <p>Table with colgroup and col</p>
+    <table>
+      <colgroup>
+        <col style="background-color: #0f0">
+        <col span="2">
+      </colgroup>
+      <tr>
+        <th>Lime</th>
+        <th>Lemon</th>
+        <th>Orange</th>
+      </tr>
+      <tr>
+        <td>Green</td>
+        <td>Yellow</td>
+        <td>Orange</td>
+      </tr>
+    </table>
+    <ol start="7">
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+    </ol>
+    <ol>
+      <li>first item</li>
+      <li>second item      <!-- Look, the closing </li> tag is not placed here! -->
+        <ul>
+          <li>second item first subitem</li>
+          <li>second item second subitem</li>
+          <li>second item third subitem</li>
+        </ul>
+      </li>                <!-- Here is the closing </li> tag -->
+      <li>third item</li>
+    </ol>
+    <footer>This here's my feet.</footer>
   </body>
 </html>
